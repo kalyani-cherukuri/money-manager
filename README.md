@@ -40,7 +40,7 @@ money-manager/
 ## ⚙️ Setup Instructions
 
 ### Clone the repo
-git clone https://github.com/your-username/money-manager.git
+git clone https://github.com/kalyani-cherukuri/money-manager.git
 cd money-manager
 
 ### Run Backend
