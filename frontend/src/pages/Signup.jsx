@@ -3,7 +3,7 @@ import { assets } from '../assets/assets';
 import Input from "../components/Input";
 import { LoaderCircle } from 'lucide-react';
 import { useNavigate, Link } from 'react-router-dom';
-import { validateEmail } from '../util/validation';
+import { validateEmail } from '../util/Validation';
 import axiosConfig from '../util/axiosConfig';
 import { API_ENDPOINTS } from '../util/apiEndpoints';
 import { toast } from 'react-hot-toast';
