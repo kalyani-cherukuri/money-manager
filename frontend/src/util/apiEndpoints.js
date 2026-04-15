@@ -1,5 +1,6 @@
-export const BASE_URL = "http://localhost:8080";
-const CLOUDINARY_CLOUD_NAME="dmjnowazx"
+export const BASE_URL = import.meta.env.VITE_BASE_URL;
+
+const CLOUDINARY_CLOUD_NAME = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
 export const API_ENDPOINTS={
     LOGIN:"/login",
     REGISTER:"/register",
