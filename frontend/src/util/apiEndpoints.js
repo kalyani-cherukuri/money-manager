@@ -2,8 +2,8 @@ export const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const CLOUDINARY_CLOUD_NAME = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
 export const API_ENDPOINTS={
-    LOGIN:"/login",
-    REGISTER:"/register",
+    LOGIN:"/profile/login",
+    REGISTER:"/profile/register",
     GET_USER_INFO: "/profile",
     GET_ALL_CATEGORIES: "/categories",
     ADD_CATEGORY: "/categories",

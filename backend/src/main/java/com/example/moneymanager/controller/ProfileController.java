@@ -18,6 +18,7 @@ import com.example.moneymanager.service.ProfileService;
 import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/profile")
 public class ProfileController {
     private final ProfileService profileService;
     @PostMapping("/register")

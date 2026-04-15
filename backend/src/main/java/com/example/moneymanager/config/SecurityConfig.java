@@ -1,5 +1,6 @@
 package com.example.moneymanager.config;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.context.annotation.Bean;
@@ -41,7 +42,7 @@ public class SecurityConfig {
                 .cors(Customizer.withDefaults())
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/register", "/login", "/activate").permitAll()
+                        .requestMatchers("/profile/**").permitAll()
                         .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
                         .anyRequest().authenticated()
                 )
@@ -60,7 +61,7 @@ public class SecurityConfig {
  
         CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(List.of(frontendUrl)); // frontend
+        config.setAllowedOriginPatterns(Arrays.asList("*")); // frontend
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE","OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
