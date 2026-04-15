@@ -21,7 +21,6 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/incomes")
-@CrossOrigin(origins = "http://localhost:5173")
 public class IncomeController {
     private final IncomeService incomeService;
 

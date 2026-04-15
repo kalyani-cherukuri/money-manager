@@ -18,7 +18,6 @@ import com.example.moneymanager.service.ProfileService;
 import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
 public class ProfileController {
     private final ProfileService profileService;
     @PostMapping("/register")
